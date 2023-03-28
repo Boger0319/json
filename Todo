@@ -1,0 +1,72 @@
+# 代码卡片
+- - -
+## 功能
+* 登 录 / 注 册
+* 代码高亮 / 样式选择
+* 代码图片生成
+* 代码卡片分享
+* 代码 Tags 分类
+* 文件夹
+
+* 题目库
+
+## 后台接口
+
+### /api/login
+
+```
+username
+password
+code
+```
+
+/api/login/phone
+/api/login/email
+/api/login/wx
+/api/login/qq
+
+### /api/register
+
+```
+username
+password
+code
+```
+
+
+## 数据库存储
+### userModel
+```
+uid
+username
+password
+mail
+registerDate
+lastLogin
+Nickname
+status
+auth
+```
+ 
+codeCardModel
+```
+cid
+uid 外键
+title
+author
+content
+language
+releaseDate
+lastModifiedDate
+status
+category
+likes
+views
+```
+
+codeTagModel
+```
+cid
+tag_id
+```
+
